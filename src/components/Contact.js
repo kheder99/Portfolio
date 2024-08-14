@@ -30,7 +30,7 @@ function Contact () {
         setButtonText('Sending...');
         e.preventDefault();
 
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+        emailjs.sendForm("service_nw9gc0s", "template_90h2tkg", form.current,"sr6V59iPQHWjMD2nk")
             .then((result) => {
                 console.log(result.text);
                 console.log("Message Send Successfully.");
